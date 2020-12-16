@@ -1,0 +1,6 @@
+.places__card-like {
+  background-image: url(../../../images/like.svg);
+  background-size: cover;
+  width: 20px;
+  height: 18px;
+}
