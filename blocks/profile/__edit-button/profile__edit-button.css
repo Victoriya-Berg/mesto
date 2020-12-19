@@ -6,7 +6,9 @@
   border: 2px solid white;
   height: 25px;
   width: 25px;
-  transform: translateY(-18px);
+  -webkit-transform: translateY(-18px);
+      -ms-transform: translateY(-18px);
+          transform: translateY(-18px);
 }
 
 @media (max-width: 768px) {
@@ -19,8 +21,14 @@
 
 @media (max-width: 570px) {
   .profile__edit-button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
-    transform: translate(109px, -35px);
+    -webkit-transform: translate(109px, -35px);
+        -ms-transform: translate(109px, -35px);
+            transform: translate(109px, -35px);
   }
 }

@@ -1,14 +1,20 @@
 .profile {
   color: white;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: min-content max-content repeat(2, 1fr);
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 570px) {
   .profile {
+    -ms-grid-columns: 280px;
     grid-template-columns: 280px;
     justify-items: center;
   }

@@ -1,7 +1,7 @@
 .places__card-title {
-  
   max-width: 200px;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
