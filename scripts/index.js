@@ -10,8 +10,8 @@ let form = overlayPopup.querySelector('.popup__form');
 
 let addPopup = () => {
   overlayPopup.classList.add('popup_opened');
-  editName.textContent = profileName.value;
-  editDescription.textContent = profileDescription.value;
+  editName.value = profileName.textContent;
+  editDescription.value = profileDescription.textContent;
 };
 let closePopup = () => {
   overlayPopup.classList.remove('popup_opened');
