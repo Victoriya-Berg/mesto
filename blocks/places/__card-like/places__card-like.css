@@ -4,3 +4,7 @@
   width: 20px;
   height: 18px;
 }
+
+.places__card-like:active {
+  background-image: url(../../../images/like-active.svg);
+}

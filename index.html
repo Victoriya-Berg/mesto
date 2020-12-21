@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="author" content="Виктория Ванькова">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="vendor/normilize.css">
   <link rel="stylesheet" type="text/css" href="pages/index.css">
   <title>Mesto</title>
 </head>
@@ -14,7 +13,9 @@
   <div class="page__container">
 
     <header class="header section page__header">
-      <img src="images/logo.svg" alt="Место Россия" class="header__logo">
+      <h1 class="header__title">
+        <img src="images/logo.svg" alt="Место Россия" class="header__logo">
+      </h1>
     </header>
 
     <main class="content page__content">
@@ -24,9 +25,9 @@
           <h2 class="profile__info-name">Жак-Ив Кусто</h2>
           <p class="profile__info-description">Исследователь океана</p>
         </div>
-        <button class="profile__edit-button section__button" type="submit">
+        <button class="profile__edit-button section__button" type="button">
         </button>
-        <button class="profile__add-button section__button">
+        <button class="profile__add-button section__button" type="button">
         </button>
       </section>
 
@@ -36,53 +37,53 @@
             class="places__card-image">
           <div class="places__card-info">
             <h2 class="places__card-title section__title">Карачаевск</h2>
-            <button class="places__card-like section__button"></button>
+            <button class="places__card-like section__button" type="button"></button>
           </div>
         </div>
         <div class="places__card">
           <img src="images/grid_elbrus.jpg" alt="Гора Эльбрус" class="places__card-image">
           <div class="places__card-info">
             <h2 class="places__card-title section__title">Гора Эльбрус</h2>
-            <button class="places__card-like section__button"></button>
+            <button class="places__card-like section__button" type="button"></button>
           </div>
         </div>
         <div class="places__card">
           <img src="images/grid_dombay.jpg" alt="Гора Домбай" class="places__card-image">
           <div class="places__card-info">
             <h2 class="places__card-title section__title">Домбай</h2>
-            <button class="places__card-like section__button"></button>
+            <button class="places__card-like section__button" type="button"></button>
           </div>
         </div>
         <div class="places__card">
           <img src="images/grid_tuman.jpg" alt="Река в тумане" class="places__card-image">
           <div class="places__card-info">
             <h2 class="places__card-title section__title">Карелия</h2>
-            <button class="places__card-like section__button"></button>
+            <button class="places__card-like section__button" type="button"></button>
           </div>
         </div>
         <div class="places__card">
           <img src="images/grid_chelyabinsk.jpg" alt="Плато в Челябинской области" class="places__card-image">
           <div class="places__card-info">
             <h2 class="places__card-title section__title">Челябинская область</h2>
-            <button class="places__card-like section__button"></button>
+            <button class="places__card-like section__button" type="button"></button>
           </div>
         </div>
         <div class="places__card">
           <img src="images/grid_mountain.jpg" alt="Горы в Краснодарском крае" class="places__card-image">
           <div class="places__card-info">
             <h2 class="places__card-title section__title">Краснодарский край</h2>
-            <button class="places__card-like section__button"></button>
+            <button class="places__card-like section__button" type="button"></button>
           </div>
         </div>
       </section>
 
       <section class="popup section">
         <div class="popup__container">
-          <button class="popup__close-btn section__button"></button>
+          <button class="popup__close-btn section__button" type="button"></button>
           <h2 class="popup__title section__title">Редактировать профиль</h2>
-          <form class="popup__form">
-            <input type="text" name="name" placeholder="Жак-Ив Кусто" class="popup__form-item popup__name">
-            <input type="text" name="descripion" placeholder="Исследователь океана" class="popup__form-item popup__description">
+          <form class="popup__form" name="profile__date">
+            <input type="text" name="name" placeholder="Жак-Ив Кусто" class="popup__form-item popup__form-item_type_name">
+            <input type="text" name="descripion" placeholder="Исследователь океана" class="popup__form-item popup__form-item_type_description">
             <button class="section__button popup__save-btn" type="submit">Сохранить</button>
           </form>
         </div>
@@ -93,7 +94,7 @@
     <footer class="footer section">
       <p class="footer__author">© 2020 Mesto Russia</p>
     </footer>
-<!-- ! Шутка за 300 для ревьювера: чем больше суицидников -- тем их меньше -->
+<!-- Ура, Вы прочитали :3 -->
   </div>
   <script src="scripts/index.js"></script>
 </body>

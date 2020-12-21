@@ -12,3 +12,7 @@
 .section__button:hover {
   opacity: .6;
 }
+
+.section__button:active {
+  opacity: 1;
+}
